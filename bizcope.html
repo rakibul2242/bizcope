@@ -21,7 +21,7 @@
 
 <body>
     <!-- header section -->
-    <div class="header flex justify-between px-23 items-center bg-primary-color py-6 ">
+    <div class="header sticky top-0 z-50 flex justify-between px-22 items-center bg-primary-color py-6 hidden">
         <div class="logo w-38"><img src="/assets/images/logo.png" alt=""></div>
         <div class="navbar ml-32 flex justify-between space-x-8 items-center font-bold text-white">
             <a href="#">About</a>
@@ -32,11 +32,13 @@
             <a href="#">Growth Club</a>
         </div>
         <div class="w-1/5">
-            <a class="bg-white px-6 py-2 font-bold rounded text-primary-color">LET'S TALK</a>
+            <a
+                class="bg-white px-6 py-2 font-bold rounded text-[#25ABE1] hover:text-white transition duration-300 hover:bg-[#232A61]">LET'S
+                TALK</a>
         </div>
     </div>
     <!-- main section  -->
-    <div class="main bg-white pt-3 px-22 ">
+    <div class="main bg-white pt-3 px-22 hidden">
         <div class="bg-gray-100 px-3 py-5 flex items-center justify-between">
             <span class="font-bold w-2/10 text-red-600 text-lg">Beware of Job Scams!</span>
             <marquee class="mx-10 font-semibold text-black-500">We've noticed a surge in fake job offers via WhatsApp
@@ -46,16 +48,18 @@
         <div class="flex justify-between items-start my-16">
             <div class="w-full lg:w-1/2">
                 <div>
-                    <h1 class="text-5xl font-semibold">Digital Marketing with</h1>
+                    <h1 class="text-5xl font-semibold mb-8 border-b-15 leading-6 border-cyan-600/30 inline-block">
+                        Digital Marketing with</h1>
                     <br>
-                    <h1 class="text-5xl font-semibold mb-12"> Skin in the Game</h1>
+                    <h1 class="text-5xl font-semibold mb-12 border-b-15 leading-6 border-cyan-600/30 inline-block"> Skin
+                        in the Game</h1>
                 </div>
                 <div class="w-4/5">
                     <p class="pb-3 text-xl">With over a decade of experience in SEO, Web Dev, and the digital space,
                         we’ve proved that strategic thinking & expertise create fascinating results</p>
                     <p class="pb-3 text-xl">Let’s put the skin in the game! 🤝</p>
-                    <a class="bg-primary-color px-6 py-4 text-white font-bold text-xl inline-block" href="#">Schedule a
-                        Call</a>
+                    <a class="bg-[#25ABE1] px-6 py-4 text-white font-bold text-xl inline-block transition duration-300 hover:bg-[#232A61]"
+                        href="#">Schedule a Call</a>
                 </div>
             </div>
             <div class="w-1/2 px-10 pt-6">
@@ -72,7 +76,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-gray-100 px-24 py-8">
+    <div class="bg-gray-100 px-24 py-8 hidden">
         <h1 class="font-bold text-4xl"><span class="text-[#232A61]">Featured</span> <span class="text-primary-color">
                 In</span></h1>
         <div class="flex justify-between items-center pt-8 pb-4">
@@ -85,7 +89,7 @@
             <img class="w-18" src="assets/images/featuredImage7.png" alt="">
         </div>
     </div>
-    <div class="px-22 flex justify-between items-start py-15">
+    <div class="px-22 flex justify-between items-start py-14 hidden">
         <div class="w-full lg:w-1/2 relative">
             <div class="absolute inset-0 bg-no-repeat bg-left bg-contain opacity-15 z-0"
                 style="background-image: url('/assets/images/bgImage2.png');">
@@ -94,16 +98,361 @@
                 <img class="w-80 ps-8" src="/assets/images/bgImage1.png" alt="">
             </div>
         </div>
-        <div class="w-1/2">
-            <h1><span class="border-4">Why</span><span class="text-primary-color"> Bizcope</span></h1>
-            <p>The answer is simple – <strong>Bizcope helps you achieve more sales and revenue</strong> from our Digital
+        <div class="w-1/2 pl-11">
+            <h1 class="text-4xl mb-5 font-bold"><span class="text-[#232A61]">Why</span><span class="text-primary-color">
+                    Bizcope</span></h1>
+            <div class="h-1 bg-primary-color w-25 mb-5"></div>
+            <p class="text-xl text-normal mb-5 text-justify">The answer is simple – <strong>Bizcope helps you achieve
+                    more sales and revenue</strong> from our Digital
                 Marketing services. As we have been in the industry for more than 14 years now (since 2010) we have
                 grown high-level expertise in this industry.</p>
-            <div class="flex items-center p-3 justify-evenly">
-                <img src="/assets/images/videoImage3.png" class="h-15" alt="">
-                <img src="/assets/images/videoImage2.png" class="h-15" alt="">
-                <img src="/assets/images/videoImage4.png" class="w-15" alt="">
+            <div class="flex items-center space-x-8 items-start">
+                <img src="/assets/images/videoImage3.png" class="h-17" alt="">
+                <img src="/assets/images/videoImage1.png" class="h-17" alt="">
+                <img src="/assets/images/videoImage4.png" class="w-17" alt="">
             </div>
+        </div>
+    </div>
+    <div class="bg-gray-100 px-22 py-14 flex hidden">
+        <div class="w-full lg:w-1/2">
+            <h1 class="text-4xl font-bold mb-8">
+                <span class="text-[#232A61]">Grow Your Business With</span><br>
+                <span class="text-primary-color">The Best Online Marketing Company</span>
+            </h1>
+            <div class="h-1 bg-primary-color w-32 mb-8"></div>
+            <p class="text-justify text-lg font-medium">Through our proven Digital Marketing services we can help you
+                get more traffic, help you convert those traffic into customers, and customers into advocates of your
+                brand. Today Bizcope is a leading SEO service provider company in Bangladesh because of the results we
+                provide our clients day-in and day-out.</p>
+        </div>
+        <div class="w-full lg:w-1/2 relative">
+            <div class="absolute inset-0 bg-no-repeat bg-right bg-contain opacity-45 z-0"
+                style="background-image: url('/assets/images/bgImage4.png');">
+            </div>
+            <div class="relative z-10 flex justify-end items-end h-full p-15 pr-5">
+                <img class="w-80 ps-8" src="/assets/images/bgImage3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary-color p-22 flex justify-between hidden">
+        <div class="bg-white px-8 py-10 items-center w-3/10 flex flex-col">
+            <img class="w-50 mb-8" src="assets/images/bgImage5.png" alt="Experience">
+            <h3 class="text-[#232A61] text-2xl font-bold">Experience</h3>
+            <p class="text-lg text-gray-800 text-center">Experience is such a thing that you can’t make with money. Our
+                12+ years of experience of excellent data-driven results make us different from all other SEO companies.
+            </p>
+        </div>
+        <div class="bg-white px-8 py-10 items-center w-3/10 flex flex-col">
+            <img class="w-40 mb-8" src="assets/images/bgImage6.png" alt="Industry Experts">
+            <h3 class="text-2xl font-bold"><span class="text-[#232A61]">Industry</span><span class="text-primary-color">
+                    Experts</span></h3>
+            <p class="text-lg text-gray-800 text-center">We are led by biggest industry experts in Bangladesh who give
+                services to the biggest Bangladeshi companies like Rokomari.com, BITM, BASIS and many more.</p>
+        </div>
+        <div class="bg-white px-8 py-10 items-center w-3/10 flex flex-col">
+            <img class="w-50 mb-8" src="assets/images/bgImage7.png" alt="Proof of Results">
+            <h3 class="text-2xl font-bold mt-2"><span class="text-[#232A61]">Proof of</span><span
+                    class="text-primary-color"> Results</span></h3>
+            <p class="text-lg text-gray-800 text-center">Every SEO company says that they can deliver you results, but
+                we don’t just say but also show you the proof from our real projects.</p>
+        </div>
+    </div>
+    <div class="service px-22 py-14 pb-7 hidden">
+        <h1 class="text-4xl mb-5 font-bold"><span class="text-[#232A61]">Our </span><span class="text-primary-color">
+                Services</span></h1>
+        <div class="h-1 bg-primary-color w-20 mb-13"></div>
+        <div class="flex flex-wrap justify-between space-y-14">
+            <div
+                class="shadow-xl border border-gray-100 px-6 py-7 w-full lg:w-3/10 flex flex-col justify-start items-start">
+                <h3 class="text-2xl font-bold text-[#232a61] mb-4">Digital Marketing</h3>
+                <p class="text-xl text-gray-800 mb-8">Digital marketing creates opportunities for small and
+                    medium business enterprises to compete with larger business entities. </p>
+                <a class="px-5 rounded-sm py-3 bg-[#25ABE1] transition duration-300 hover:bg-[#232A61] font-semibold text-white"
+                    href="">Get Started</a>
+            </div>
+            <div
+                class="shadow-xl border border-gray-100 px-6 py-7 w-full lg:w-3/10 flex flex-col justify-start items-start">
+                <h3 class="text-2xl font-bold text-[#232a61] mb-4">Search Engine Optimization</h3>
+                <p class="text-xl text-gray-800 mb-8">SEO is a part of Digital marketing that help your targeted
+                    customers to find you in search engine results and take action.</p>
+                <a class="px-5 rounded-sm py-3 bg-[#25ABE1] transition duration-300 hover:bg-[#232A61] font-semibold text-white"
+                    href="">Get Started</a>
+            </div>
+            <div
+                class="shadow-xl border border-gray-100 px-6 py-7 w-full lg:w-3/10 flex flex-col justify-start items-start">
+                <h3 class="text-2xl font-bold text-[#232a61] mb-4">Web Design and Development</h3>
+                <p class="text-xl text-gray-800 mb-8">Professional web Designing is the first step to showcase your
+                    brand and convert visitors into buyers.</p>
+                <a class="px-5 rounded-sm py-3 bg-[#25ABE1] transition duration-300 hover:bg-[#232A61] font-semibold text-white"
+                    href="">Get Started</a>
+            </div>
+            <div
+                class="shadow-xl border border-gray-100 px-6 py-7 w-full lg:w-3/10 flex flex-col justify-start items-start">
+                <h3 class="text-2xl font-bold text-[#232a61] mb-4">Software Development</h3>
+                <p class="text-xl text-gray-800 mb-8">Building reliable and scalable software development to meet your
+                    business goals.</p>
+                <a class="px-5 rounded-sm py-3 bg-[#25ABE1] transition duration-300 hover:bg-[#232A61] font-semibold text-white"
+                    href="">Get Started</a>
+            </div>
+            <div
+                class="shadow-xl border border-gray-100 px-6 py-7 w-full lg:w-3/10 flex flex-col justify-start items-start">
+                <h3 class="text-2xl font-bold text-[#232a61] mb-4">E-commerce SEO</h3>
+                <p class="text-xl text-gray-800 mb-8">SEO has the potential to boost your e-commerce site’s sales and
+                    revenue and make you the market leader in your industry.</p>
+                <a class="px-5 rounded-sm py-3 bg-[#25ABE1] transition duration-300 hover:bg-[#232A61] font-semibold text-white"
+                    href="">Get Started</a>
+            </div>
+            <div
+                class="shadow-xl border border-gray-100 px-6 py-7 w-full lg:w-3/10 flex flex-col justify-start items-start">
+                <h3 class="text-2xl font-bold text-[#232a61] mb-4">Social Media Marketing</h3>
+                <p class="text-xl text-gray-800 mb-8">If you aren’t sure how you should proceed in promoting your brand
+                    let us analyze your business to take most effective plan.</p>
+                <a class="px-5 rounded-sm py-3 bg-[#25ABE1] transition duration-300 hover:bg-[#232A61] font-semibold text-white"
+                    href="">Get Started</a>
+            </div>
+            <div
+                class="shadow-xl border border-gray-100 px-6 py-7 w-full lg:w-3/10 flex flex-col justify-start items-start">
+                <h3 class="text-2xl font-bold text-[#232a61] mb-4">Clipping Path</h3>
+                <p class="text-xl text-gray-800 mb-8">From a simple white background to the most complex clipping paths.
+                    Get pixel perfect image editing services, whenever you need them.</p>
+                <a class="px-5 rounded-sm py-3 bg-[#25ABE1] transition duration-300 hover:bg-[#232A61] font-semibold text-white"
+                    href="">Get Started</a>
+            </div>
+            <div
+                class="shadow-xl border border-gray-100 px-6 py-7 w-full lg:w-3/10 flex flex-col justify-start items-start">
+                <h3 class="text-2xl font-bold text-[#232a61] mb-4">Video Production</h3>
+                <p class="text-xl text-gray-800 mb-8">Our video production services can help direct people to your
+                    business, build your reputation, and expand your sales.</p>
+                <a class="px-5 rounded-sm py-3 bg-[#25ABE1] transition duration-300 hover:bg-[#232A61] font-semibold text-white"
+                    href="">Get Started</a>
+            </div>
+            <div
+                class="shadow-xl border border-gray-100 px-6 py-7 w-full h-full lg:w-3/10 flex flex-col justify-start items-start">
+                <h3 class="text-2xl font-bold text-[#232a61] mb-4">Web Hosting</h3>
+                <p class="text-xl text-gray-800 mb-8">We offer web hosting services that will provide you with reliable
+                    access to the internet and the ability to host a website more securely.</p>
+                <a class="px-5 rounded-sm py-3 bg-[#25ABE1] transition duration-300 hover:bg-[#232A61] font-semibold text-white"
+                    href="">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-100 px-22 py-15 hidden">
+        <h1 class="text-4xl mb-5 font-bold">
+            <span class="text-[#232A61]">Testimonials From Our </span>
+            <span class="text-primary-color">Clients</span>
+        </h1>
+        <div class="h-1 bg-primary-color w-20 mb-13"></div>
+        <div class="flex justify-between space-x-6">
+            <div class="w-full">
+                <iframe class="w-full aspect-video bg-[black]"
+                    src="https://player.vimeo.com/video/531884650?autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="w-full">
+                <iframe class="w-full aspect-video"
+                    src="https://player.vimeo.com/video/531871073?autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="w-full">
+                <iframe class="w-full aspect-video"
+                    src="https://player.vimeo.com/video/507052450?autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary-color px-22 py-15 hidden">
+        <h1 class="text-4xl text-white font-bold capitalize mb-8">We are trusted by the best</h1>
+        <div class="flex flex-wrap justify-between gap-6">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/Logitech-Logo.png" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/ryans-logo-.svg" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/hatil_logo.png" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/Mobil-logo.jpg" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/payoneer-logo.png" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/Rokomari.png" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/Swish-Global.jpg" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/applegadgets-logo.png" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/bitm-logo.png" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/LOGO-UNDIRA.png" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/Aerobo-logo.png" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/MEDEASY-LOGO.png" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/access-plus-wa-logo.png" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/brac_bank.png" alt="">
+            <img class="bg-white w-52 px-8 py-3" src="assets/images/Canadian-Global.png" alt="">
+            <img class="bg-white w-52 h-24 object-contain px-8 py-3" src="assets/images/CoastToCoast.png" alt="">
+            <img class="bg-white w-52 h-24 object-contain px-8 py-3" src="assets/images/business-globalizer-logo.png"
+                alt="">
+            <img class="bg-white w-52 h-24 object-contain px-8 py-3" src="assets/images/Bi-Rite-logo.png" alt="">
+            <img class="bg-white w-52 h-24 object-contain px-8 py-3" src="assets/images/proko-logo.png" alt="">
+            <img class="bg-white w-52 h-24 object-contain px-8 py-3" src="assets/images/zogics-logo.png" alt="">
+        </div>
+    </div>
+    <div class="bg-primary-color px-22 py-30 text-center text-white hidden">
+        <h2 class="font-bold text-5xl capitalize mb-5">Ready to build your brand?</h2>
+        <h2 class="font-bold text-2xl mb-10">YOU ARE JUST ONE STEP AWAY TO EXPERIENCE THE PROGRESS.</h2>
+        <a href="#"
+            class="bg-white text-xl font-bold px-6 py-4 transition duration-300 text-[#25ABE1] hover:text-white hover:bg-[#232A61]">
+            Let Us Build Your Business
+        </a>
+
+    </div>
+    <div class="bg-gray-100 px-22 py-14 hidden">
+        <h1 class="text-4xl mb-5 font-bold">
+            <span class="text-[#232A61]">Contributions To The </span>
+            <span class="text-primary-color">Community</span>
+        </h1>
+        <div class="h-1 bg-primary-color w-22 mb-13"></div>
+        <div class="grid grid-cols-3 grid-rows-2 gap-4">
+            <div class="overflow-hidden">
+                <img src="assets/images/community_image1.jpg" alt=""
+                    class="w-full h-full object-cover transform scale-107">
+            </div>
+            <div class="col-span-1 row-span-2 overflow-hidden">
+                <img src="assets/images/community_image2.jpg" alt=""
+                    class="w-full h-full object-cover transform scale-107">
+            </div>
+            <div class="overflow-hidden">
+                <img src="assets/images/community_image3.jpg" alt=""
+                    class="w-full h-full object-cover transform scale-107">
+            </div>
+            <div class="overflow-hidden">
+                <img src="assets/images/community_image4.jpg" alt=""
+                    class="w-full h-full object-cover transform scale-107">
+            </div>
+            <div class="overflow-hidden">
+                <img src="assets/images/community_image5.jpg" alt=""
+                    class="w-full h-full object-cover transform scale-107">
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary-color px-22 space-x-10 py-14 flex justify-between hidden">
+        <div class="bg-white p-12 text-center w-full">
+            <h1 class="text-primary-color text-5xl font-bold">14+</h1>
+            <h3 class="text-2xl font-bold">
+                <span class="text-[#232A61]">Years Of </span>
+                <span class="text-primary-color">Experience</span>
+            </h3>
+        </div>
+        <div class="bg-white p-12 text-center w-full">
+            <h1 class="text-primary-color text-5xl font-bold">1000+</h1>
+            <h3 class="text-2xl font-bold">
+                <span class="text-[#232A61]">Happy </span>
+                <span class="text-primary-color">Experience</span>
+            </h3>
+        </div>
+        <div class="bg-white p-12 text-center w-full">
+            <h1 class="text-primary-color text-5xl font-bold">51+</h1>
+            <h3 class="text-2xl font-bold">
+                <span class="text-[#232A61]">Brains To </span>
+                <span class="text-primary-color">Support</span>
+            </h3>
+        </div>
+    </div>
+    <div class="bg-gray-100 px-22 py-14">
+        <h1 class="text-4xl mb-5 font-bold">
+            <span class="text-[#232A61]">Inside Bizcope </span>
+            <span class="text-primary-color">Minds</span>
+        </h1>
+        <div class="h-1 bg-primary-color w-20 mb-6"></div>
+        <div class="flex justify-between space-x-7">
+            <div class="w-full shadow-xl rounded-md">
+                <img class="w-full h-50 rounded-t mb-4" src="assets/images/thumbnail_image1.jpg" alt="">
+                <h2 class="px-8 py-5 text-xl font-semibold">Bizcope is Coming to Kuala Lumpur, Malaysia</h2>
+            </div>
+            <div class="w-full shadow-xl rounded-md">
+                <img class="w-full h-50 rounded-t mb-4" src="assets/images/thumbnail_image2.jpg" alt="">
+                <h2 class="px-8 py-5 text-xl font-semibold">Meta Ads Helped MedEasy Gain 3X Customers</h2>
+            </div>
+            <div class="w-full shadow-xl rounded-md">
+                <img class="w-full h-50 rounded-t mb-4" src="assets/images/thumbnail_image3.jpg" alt="">
+                <h2 class="px-8 py-5 text-xl font-semibold">Bizcope Thank You Day 2024: Tribute to Our Amazing Team</h2>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary-color px-22 py-14 flex justify-between">
+        <div class="bg-white w-1/2 rounded">
+            <h1 class="text-2xl py-4 px-12 rounded-t text-white font-bold bg-[#232a61]">Get A Free 30-Minute Strategy
+                Session</h1>
+            <form class="p-12" action="" method="POST">
+                <div class="mb-1 md:flex md:space-x-2">
+                    <div class="w-full mb-1 md:mb-0">
+                        <label for="first-name" class="block text-md font-medium">*First Name</label>
+                        <input type="text" id="first-name" name="first-name" class="w-full px-4 py-2 border rounded"
+                            required>
+                    </div>
+                    <div class="w-full">
+                        <label for="last-name" class="block text-md font-medium">*Last Name</label>
+                        <input type="text" id="last-name" name="last-name" class="w-full px-4 py-2 border rounded"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Email & Phone -->
+                <div class="mb-1 md:flex md:space-x-4">
+                    <div class="w-full md:w-1/2 mb-1 md:mb-0">
+                        <label for="email" class="block text-md font-medium">*Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded" required>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <label for="phone" class="block text-md font-medium">*Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border rounded" required>
+                    </div>
+                </div>
+
+                <!-- Website / FB Page -->
+                <div class="mb-1">
+                    <label for="website" class="block text-md font-medium">Website / FB Page</label>
+                    <input type="url" id="website" name="website" class="w-full px-4 py-2 border rounded">
+                </div>
+
+                <!-- Your Needs? -->
+                <div class="mb-1">
+                    <label for="needs" class="block text-md font-medium">*Your Needs?</label>
+                    <select id="needs" name="needs" class="w-full px-4 py-2 font-medium border rounded" required>
+                        <option value="I need more customers">I need more customers</option>
+                        <option value="I need more organic traffic to my website">I need more organic traffic to my website</option>
+                        <option value="I need help with my conversion">I need help with my conversion</option>
+                        <option value="I need more leads">I need more leads</option>
+                        <option value="I need help with Social Media">I need help with Social Media</option>
+                        <option value="I need help with Paid Marketing">I need help with Paid Marketing</option>
+                        <option value="I need a Website">I need a Website</option>
+                        <option value="I need an Ecommerce Website">I need an Ecommerce Website</option>
+                    </select>
+                </div>
+
+                <!-- Yearly Project Budget -->
+                <div class="mb-1">
+                    <label for="budget" class="block text-md font-medium">*Yearly Project Budget
+                        (USD)</label>
+                    <input type="number" id="budget" name="budget" class="w-full px-4 py-2 border rounded" required>
+                </div>
+
+                <!-- Message -->
+                <div class="mb-1">
+                    <label for="message" class="block text-md font-medium">Message</label>
+                    <textarea id="message" name="message" class="w-full px-4 py-2 border rounded" rows="4"></textarea>
+                </div>
+
+                <!-- "I am not a robot" -->
+                <div class="mb-1">
+                    <label class="block text-md font-medium">
+                        <input type="checkbox" id="robot-check" name="robot-check" required> I am not a robot
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit" class="w-full text-white bg-[#232a61] text-xl font-bold py-3 hover:bg-[#25ABE1] transition">
+                        Claim Now!
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <h1 class="text-3xl font-bold text-white">Let us build your brand</h1>
+            <p class="text-white text-lg">Ready to build your brand? You are just one step away to experience the
+                progress.</p>
+            <p class="text-white text-lg">If there is still something you want to know, get in touch with us!</p>
+            <a class="bg-white p-4" href=""> Get In Touch</a>
         </div>
     </div>
 </body>
