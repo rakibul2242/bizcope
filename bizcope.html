@@ -347,7 +347,7 @@
             </h3>
         </div>
     </div>
-    <div class="bg-gray-100 px-22 py-14">
+    <div class="bg-gray-100 px-22 py-14 hidden">
         <h1 class="text-4xl mb-5 font-bold">
             <span class="text-[#232A61]">Inside Bizcope </span>
             <span class="text-primary-color">Minds</span>
@@ -368,7 +368,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-primary-color px-22 py-14 flex justify-between">
+    <div class="bg-primary-color px-22 py-14 flex h-full items-center justify-between">
         <div class="bg-white w-1/2 rounded">
             <h1 class="text-2xl py-4 px-12 rounded-t text-white font-bold bg-[#232a61]">Get A Free 30-Minute Strategy
                 Session</h1>
@@ -385,8 +385,6 @@
                             required>
                     </div>
                 </div>
-
-                <!-- Email & Phone -->
                 <div class="mb-1 md:flex md:space-x-4">
                     <div class="w-full md:w-1/2 mb-1 md:mb-0">
                         <label for="email" class="block text-md font-medium">*Email Address</label>
@@ -397,19 +395,16 @@
                         <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border rounded" required>
                     </div>
                 </div>
-
-                <!-- Website / FB Page -->
                 <div class="mb-1">
                     <label for="website" class="block text-md font-medium">Website / FB Page</label>
                     <input type="url" id="website" name="website" class="w-full px-4 py-2 border rounded">
                 </div>
-
-                <!-- Your Needs? -->
                 <div class="mb-1">
                     <label for="needs" class="block text-md font-medium">*Your Needs?</label>
                     <select id="needs" name="needs" class="w-full px-4 py-2 font-medium border rounded" required>
                         <option value="I need more customers">I need more customers</option>
-                        <option value="I need more organic traffic to my website">I need more organic traffic to my website</option>
+                        <option value="I need more organic traffic to my website">I need more organic traffic to my
+                            website</option>
                         <option value="I need help with my conversion">I need help with my conversion</option>
                         <option value="I need more leads">I need more leads</option>
                         <option value="I need help with Social Media">I need help with Social Media</option>
@@ -418,41 +413,185 @@
                         <option value="I need an Ecommerce Website">I need an Ecommerce Website</option>
                     </select>
                 </div>
-
-                <!-- Yearly Project Budget -->
                 <div class="mb-1">
                     <label for="budget" class="block text-md font-medium">*Yearly Project Budget
                         (USD)</label>
                     <input type="number" id="budget" name="budget" class="w-full px-4 py-2 border rounded" required>
                 </div>
-
-                <!-- Message -->
                 <div class="mb-1">
                     <label for="message" class="block text-md font-medium">Message</label>
-                    <textarea id="message" name="message" class="w-full px-4 py-2 border rounded" rows="4"></textarea>
+                    <textarea id="message" name="message" class="w-full px-4 py-2 border rounded" rows="3"></textarea>
                 </div>
-
-                <!-- "I am not a robot" -->
-                <div class="mb-1">
-                    <label class="block text-md font-medium">
-                        <input type="checkbox" id="robot-check" name="robot-check" required> I am not a robot
+                <div class="mb-4 max-w-sm w-80">
+                    <label
+                        class="flex justify-between items-center border border-gray-300 rounded-md px-4 py-2 shadow-sm bg-gray-100 cursor-pointer">
+                        <div class="flex items-center space-x-3">
+                            <input type="checkbox" id="robot-check" name="robot-check" required
+                                class="form-checkbox w-5 h-5 text-blue-600 border-gray-300">
+                            <span class="text-gray-800 text-md select-none">I'm not a robot</span>
+                        </div>
+                        <div class="flex flex-col items-center text-[10px]">
+                            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA logo"
+                                class="w-6 h-6">
+                            <span class="text-gray-500">reCAPTCHA</span>
+                            <div class="flex space-x-1">
+                                <span class="text-blue-600 cursor-pointer hover:underline">Privacy</span>
+                                <span class="text-blue-600 cursor-pointer hover:underline">Terms</span>
+                            </div>
+                        </div>
                     </label>
                 </div>
-
-                <!-- Submit Button -->
                 <div>
-                    <button type="submit" class="w-full text-white bg-[#232a61] text-xl font-bold py-3 hover:bg-[#25ABE1] transition">
+                    <button type="submit"
+                        class="w-full text-white bg-[#232a61] text-xl font-bold py-3 hover:bg-[#25ABE1] transition">
                         Claim Now!
                     </button>
                 </div>
             </form>
         </div>
-        <div>
-            <h1 class="text-3xl font-bold text-white">Let us build your brand</h1>
-            <p class="text-white text-lg">Ready to build your brand? You are just one step away to experience the
+        <div class="pl-20 w-1/2">
+            <h1 class="text-3xl text-4xl capitalize mb-8 font-bold text-white">Let us build your brand</h1>
+            <div class="h-1 bg-white w-25 mb-8"></div>
+            <p class="text-white text-xl font-normal mb-5 text-justify">Ready to build your brand? You are just one step
+                away to experience the
                 progress.</p>
-            <p class="text-white text-lg">If there is still something you want to know, get in touch with us!</p>
-            <a class="bg-white p-4" href=""> Get In Touch</a>
+            <p class="text-white text-lg text-justify mb-8">If there is still something you want to know, get in touch
+                with us!</p>
+            <a class="bg-white py-4 px-8 inline-block font-bold text-xl text-[#25ABE1] hover:text-white transition duration-300 hover:bg-[#232A61]"
+                href=""> Get In Touch</a>
+        </div>
+    </div>
+    <div class="bg-white px-22 py-16 flex justify-between">
+        <div class="w-1/2 mr-10">
+            <h1 class="text-4xl mb-5 font-bold">
+                <span class="text-[#232A61]">Get in </span>
+                <span class="text-primary-color">Touch</span>
+            </h1>
+            <div class="h-1 bg-primary-color w-20 mb-6"></div>
+            <div class="flex flex-wrap justify-between gap-5">
+                <div class="shadow-xl py-10 px-6 w-68 border-gray-200 border">
+                    <h3 class="text-3xl font-bold text-[#232a61] mb-4">Location</h3>
+                    <p class="text-xl leading-6 font-normal mb-5">Level 4 and 5 Nadian Tower 89/7 Gopibag, Dhaka 1203,
+                        Bangladesh</p>
+                </div>
+                <div class="shadow-xl py-10 px-6 w-68 border-gray-200 border">
+                    <h3 class="text-3xl font-bold text-[#232a61] mb-4">Contact us</h3>
+                    <p class="text-xl leading-6 font-normal mb-5">
+                        <span>Phone: +8801324738600</span>
+                        <span>email:</span>
+                        <span>hello@bizcope.com</span>
+                    </p>
+                </div>
+                <div class="shadow-xl py-10 px-6 w-68 border-gray-200 border">
+                    <h3 class="text-3xl font-bold text-[#232a61] mb-4">Our Hours</h3>
+                    <p class="text-xl leading-6 font-normal mb-5">
+                        <span>We are open</span><br>
+                        <span>SAT-THUR 08:30 – 05:00</span>
+                        <span>(GMT 6+)</span>
+                    </p>
+                </div>
+                <div class="shadow-xl py-10 px-6 w-68 border-gray-200 border">
+                    <h3 class="text-3xl font-bold text-[#232a61] mb-4">Social</h3>
+                    <div class="flex justify-start">
+                        <a class="bg-primary-color p-2 text-white m-1" href="">@</a>
+                        <a class="bg-primary-color p-2 text-white m-1" href="">$</a>
+                        <a class="bg-primary-color p-2 text-white m-1" href="">&</a>
+                        <a class="bg-primary-color p-2 text-white m-1" href="">#</a>
+                        <a class="bg-primary-color p-2 text-white m-1" href="">\"/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2 pl-20">
+            <div class="w-full h-full">
+                <iframe
+                    src="https://maps.google.com/maps?q=89%2F7%20Gopibag%20Dhaka%201203&t=m&z=16&output=embed&iwloc=near"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div class="px-22 mb-15">
+        <img src="assets/images/above-the-footer-bizcope-reward.png" alt="">
+    </div>
+    <div class="footer bg-primary-color py-10 px-22">
+        <div class="flex justify-between">
+            <div class="text-white flex flex-col justify-start">
+                <h2 class="text-lg font-bold">Company</h2>
+                <a href="">About</a>
+                <a href="">Resources</a>
+                <a href="">Career</a>
+                <a href="">Contact</a>
+                <a href="">Case Studies</a>
+            </div>
+            <div class="text-white flex flex-col justify-start">
+                <h2 class="text-lg font-bold">Services</h2>
+                <a href="">SEO</a>
+                <a href="">Digital Marketing</a>
+                <a href="">Web Design</a>
+                <a href="">Social Media Marketing</a>
+                <a href="">Video Production</a>
+            </div>
+            <div class="bg-white rounded p-5 ml-3 w-60">
+                <h2 class="text-xl font-semibold">Bangladesh Office</h2>
+                <div>
+                    <i>@</i>
+                    <span>Level 4 and 5 Nadian Tower 89/7 Gopibag, Dhaka 1203</span>
+                </div>
+                <div>
+                    <i>@</i>
+                    <span>+8801324738600</span>
+                </div>
+                <div>
+                    <i>@</i>
+                    <span>hello@bizcope.com</span>
+                </div>
+            </div>
+            <div class="bg-white rounded p-5 ml-3 w-60">
+                <h2 class="text-xl font-semibold">USA Office</h2>
+                <div>
+                    <i>@</i>
+                    <span>1111 Olde Bailey Lane, Melbourne, FL 32904</span>
+                </div>
+                <div>
+                    <i>@</i>
+                    <span>+1 (321) 290 9454</span>
+                </div>
+                <div>
+                    <i>@</i>
+                    <span>hello@bizcope.com</span>
+                </div>
+            </div>
+            <div class="bg-white rounded p-5 ml-3 w-60">
+                <h2 class="text-xl font-semibold">Malaysia Office</h2>
+                <div>
+                    <i>@</i>
+                    <span>20-01 Hexter Tower, Empire City, PJ, Kuala Lumpur</span>
+                </div>
+                <div>
+                    <i>@</i>
+                    <span>+60103895060</span>
+                </div>
+                <div>
+                    <i>@</i>
+                    <span>hello@bizcope.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-b-white h-1 bg-white w-full my-6"></div>
+        <div class="flex justify-between text-white mt-2">
+            <a href="">icon Compact desk</a>
+            <div>© 2010-2025 Bizcope Digital Ltd. All Rights Reserved. © 2010-2025 Bizcope Digital Ltd. All Rights
+                Reserved. </div>
+            <div>
+                <a class="p-3 bg-sky-300 rounded-md text-black" href="">@</a>
+                <a class="p-3 bg-sky-300 rounded-md text-black" href="">@</a>
+                <a class="p-3 bg-sky-300 rounded-md text-black" href="">@</a>
+                <a class="p-3 bg-sky-300 rounded-md text-black" href="">@</a>
+                <a class="p-3 bg-sky-300 rounded-md text-black" href="">@</a>
+            </div>
         </div>
     </div>
 </body>
