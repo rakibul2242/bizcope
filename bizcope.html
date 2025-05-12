@@ -17,11 +17,42 @@
         .text-primary-color {
             color: #25ABE1;
         }
+
+        @keyframes animateShowIn {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .animate-show-in {
+            opacity: 0;
+            transform-origin: center;
+        }
+
+        .animate-show-in.animate {
+            animation: animateShowIn 1.2s ease-in-out forwards;
+        }
+
+        .animate-up {
+            opacity: 0;
+            transform: translateY(200px);
+            transition: all 0.8s ease-out;
+        }
+
+        .animate-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 
 <body>
-    <!-- header section -->
     <div class="header sticky top-0 z-50 flex justify-between px-22 items-center bg-primary-color py-6">
         <div class="logo w-38"><img src="/assets/images/logo.png" alt=""></div>
         <div class="navbar ml-32 flex justify-between space-x-8 items-center font-bold text-white">
@@ -38,7 +69,6 @@
                 TALK</a>
         </div>
     </div>
-    <!-- main section  -->
     <div class="main bg-white pt-3 px-22">
         <div class="bg-gray-100 px-3 py-5 flex items-center justify-between">
             <span class="font-bold w-2/10 text-red-600 text-lg">Beware of Job Scams!</span>
@@ -263,28 +293,32 @@
     </div>
     <div class="bg-primary-color px-22 py-15">
         <h1 class="text-4xl text-white font-bold capitalize mb-8">We are trusted by the best</h1>
-        <div class="flex flex-wrap justify-between gap-6">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/Logitech-Logo.png" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/ryans-logo-.svg" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/hatil_logo.png" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/Mobil-logo.jpg" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/payoneer-logo.png" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/Rokomari.png" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/Swish-Global.jpg" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/applegadgets-logo.png" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/bitm-logo.png" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/LOGO-UNDIRA.png" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/Aerobo-logo.png" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/MEDEASY-LOGO.png" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/access-plus-wa-logo.png" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/brac_bank.png" alt="">
-            <img class="bg-white w-52 px-8 py-3" src="assets/images/Canadian-Global.png" alt="">
-            <img class="bg-white w-52 h-24 object-contain px-8 py-3" src="assets/images/CoastToCoast.png" alt="">
-            <img class="bg-white w-52 h-24 object-contain px-8 py-3" src="assets/images/business-globalizer-logo.png"
+        <div class="flex flex-wrap justify-between gap-5">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/Logitech-Logo.png" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/ryans-logo-.svg" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/hatil_logo.png" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/Mobil-logo.jpg" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/payoneer-logo.png" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/Rokomari.png" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/Swish-Global.jpg" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/applegadgets-logo.png" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/bitm-logo.png" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/LOGO-UNDIRA.png" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/Aerobo-logo.png" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/MEDEASY-LOGO.png" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/access-plus-wa-logo.png" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/brac_bank.png" alt="">
+            <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/Canadian-Global.png" alt="">
+            <img class="bg-white w-54 h-24 object-contain px-8 py-3 animate-show-in"
+                src="assets/images/CoastToCoast.png" alt="">
+            <img class="bg-white w-54 h-24 object-contain px-8 py-3 animate-show-in"
+                src="assets/images/business-globalizer-logo.png" alt="">
+            <img class="bg-white w-54 h-24 object-contain px-8 py-3 animate-show-in"
+                src="assets/images/Bi-Rite-logo.png" alt="">
+            <img class="bg-white w-54 h-24 object-contain px-8 py-3 animate-show-in" src="assets/images/proko-logo.png"
                 alt="">
-            <img class="bg-white w-52 h-24 object-contain px-8 py-3" src="assets/images/Bi-Rite-logo.png" alt="">
-            <img class="bg-white w-52 h-24 object-contain px-8 py-3" src="assets/images/proko-logo.png" alt="">
-            <img class="bg-white w-52 h-24 object-contain px-8 py-3" src="assets/images/zogics-logo.png" alt="">
+            <img class="bg-white w-54 h-24 object-contain px-8 py-3 animate-show-in" src="assets/images/zogics-logo.png"
+                alt="">
         </div>
     </div>
     <div class="bg-primary-color px-22 py-30 text-center text-white">
@@ -294,7 +328,6 @@
             class="bg-white text-xl font-bold px-6 py-4 transition duration-300 text-[#25ABE1] hover:text-white hover:bg-[#232A61]">
             Let Us Build Your Business
         </a>
-
     </div>
     <div class="bg-gray-100 px-22 py-14">
         <h1 class="text-4xl mb-5 font-bold">
@@ -325,23 +358,23 @@
             </div>
         </div>
     </div>
-    <div class="bg-primary-color px-22 space-x-10 py-14 flex justify-between">
+    <div class="bg-primary-color px-22 space-x-10 py-14 flex justify-between" id="counterSection">
         <div class="bg-white p-12 text-center w-full">
-            <h1 class="text-primary-color text-5xl font-bold">14+</h1>
+            <h1 class="counter text-primary-color text-5xl font-bold" data-target="14">0+</h1>
             <h3 class="text-2xl font-bold">
                 <span class="text-[#232A61]">Years Of </span>
                 <span class="text-primary-color">Experience</span>
             </h3>
         </div>
         <div class="bg-white p-12 text-center w-full">
-            <h1 class="text-primary-color text-5xl font-bold">1000+</h1>
+            <h1 class="counter text-primary-color text-5xl font-bold" data-target="1000">0+</h1>
             <h3 class="text-2xl font-bold">
                 <span class="text-[#232A61]">Happy </span>
                 <span class="text-primary-color">Experience</span>
             </h3>
         </div>
         <div class="bg-white p-12 text-center w-full">
-            <h1 class="text-primary-color text-5xl font-bold">51+</h1>
+            <h1 class="counter text-primary-color text-5xl font-bold" data-target="51">0+</h1>
             <h3 class="text-2xl font-bold">
                 <span class="text-[#232A61]">Brains To </span>
                 <span class="text-primary-color">Support</span>
@@ -470,12 +503,12 @@
             </h1>
             <div class="h-1 bg-primary-color w-20 mb-6"></div>
             <div class="flex flex-wrap justify-between gap-5">
-                <div class="shadow-xl py-10 px-6 w-68 border-gray-200 border">
+                <div class="shadow-xl py-8 px-6 w-68 border-gray-200 border animate-up">
                     <h3 class="text-3xl font-bold text-[#232a61] mb-4">Location</h3>
                     <p class="text-xl leading-6 font-normal mb-5">Level 4 and 5 Nadian Tower 89/7 Gopibag, Dhaka 1203,
                         Bangladesh</p>
                 </div>
-                <div class="shadow-xl py-10 px-6 w-68 border-gray-200 border">
+                <div class="shadow-xl py-8 px-6 w-68 border-gray-200 border animate-up">
                     <h3 class="text-3xl font-bold text-[#232a61] mb-4">Contact us</h3>
                     <p class="text-xl leading-6 font-normal mb-5">
                         <span>Phone: +8801324738600</span>
@@ -483,7 +516,7 @@
                         <span>hello@bizcope.com</span>
                     </p>
                 </div>
-                <div class="shadow-xl py-10 px-6 w-68 border-gray-200 border">
+                <div class="shadow-xl py-8 px-6 w-68 border-gray-200 border animate-up">
                     <h3 class="text-3xl font-bold text-[#232a61] mb-4">Our Hours</h3>
                     <p class="text-xl leading-6 font-normal mb-5">
                         <span>We are open</span><br>
@@ -491,14 +524,19 @@
                         <span>(GMT 6+)</span>
                     </p>
                 </div>
-                <div class="shadow-xl py-10 px-6 w-68 border-gray-200 border">
+                <div class="shadow-xl py-8 px-6 w-68 border-gray-200 border animate-up">
                     <h3 class="text-3xl font-bold text-[#232a61] mb-4">Social</h3>
                     <div class="flex justify-start">
-                        <a class="bg-primary-color p-2 text-white m-1" href="">@</a>
-                        <a class="bg-primary-color p-2 text-white m-1" href="">$</a>
-                        <a class="bg-primary-color p-2 text-white m-1" href="">&</a>
-                        <a class="bg-primary-color p-2 text-white m-1" href="">#</a>
-                        <a class="bg-primary-color p-2 text-white m-1" href="">\"/</a>
+                        <a class="bg-primary-color h-9 w-9 flex justify-center items-center text-white m-1" href=""><i
+                                class="p-2 fab fa-facebook"></i></a>
+                        <a class="bg-primary-color h-9 w-9 flex justify-center items-center text-white m-1" href=""><i
+                                class="p-2 fab fa-twitter"></i></a>
+                        <a class="bg-primary-color h-9 w-9 flex justify-center items-center text-white m-1" href=""><i
+                                class="p-2 fab fa-linkedin"></i></a>
+                        <a class="bg-primary-color h-9 w-9 flex justify-center items-center text-white m-1" href=""><i
+                                class="p-2 fab fa-instagram"></i></a>
+                        <a class="bg-primary-color h-9 w-9 flex justify-center items-center text-white m-1" href=""><i
+                                class="p-2 fab fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
@@ -608,7 +646,8 @@
         </div>
         <div class="flex justify-between items-center text-white mt-2 p-3 pb-5 border-t-1 border-gray-100">
             <div class="flex items-center">
-                <a href="" class="bfg-[#232A61]"><i class="p-3 rounded-full text-xl font-bold bg-[#232A61] text-white fas fa-arrow-circle-down"></i></a>
+                <a href="" class="bfg-[#232A61]"><i
+                        class="p-3 rounded-full text-xl font-bold bg-[#232A61] text-white fas fa-arrow-circle-down"></i></a>
                 <div class="ml-2">
                     <a href="" class="text-lg font-medium">Compact Desk</a>
                     <p class="text-xs">PDF, 2MB</p>
@@ -616,14 +655,76 @@
             </div>
             <div class="font-bold">&copy; 2010-2025 Bizcope Digital Ltd. All Rights Reserved. </div>
             <div>
-                <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center" href=""><i class="fab fa-x-twitter"></i></a>
-                <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center" href=""><i class="fab fa-instagram"></i></a>
-                <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center" href=""><i class="fab fa-tiktok"></i></a>
+                <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center"
+                    href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center"
+                    href=""><i class="fab fa-x-twitter"></i></a>
+                <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center"
+                    href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center"
+                    href=""><i class="fab fa-instagram"></i></a>
+                <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center"
+                    href=""><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        let counted = false;
+        let animated = false;
+
+        $(window).on('scroll load', function () {
+            const scrollTop = $(window).scrollTop();
+            const windowBottom = scrollTop + $(window).height();
+
+            // Counter animation (only once when section is in view)
+            const counterSection = $('#counterSection');
+            if (!counted && counterSection.length) {
+                const sectionTop = counterSection.offset().top;
+                const sectionBottom = sectionTop + counterSection.outerHeight();
+
+                if (windowBottom >= sectionTop && scrollTop <= sectionBottom) {
+                    $('.counter').each(function () {
+                        const $this = $(this);
+                        const target = $this.data('target');
+
+                        $({ count: 0 }).animate({ count: target }, {
+                            duration: 2000,
+                            step: function () {
+                                $this.text(Math.floor(this.count) + '+');
+                            },
+                            complete: function () {
+                                $this.text(target + '+');
+                            }
+                        });
+                    });
+                    counted = true;
+                }
+            }
+
+            // Animate ALL .animate-up items at once (only once)
+            if (!animated) {
+                $('.animate-up').each(function () {
+                    const elementTop = $(this).offset().top;
+                    if (windowBottom > elementTop + 50) {
+                        $('.animate-up').addClass('show');
+                        animated = true;
+                        return false;
+                    }
+                });
+            }
+
+            // Animate EACH .animate-show-in when it comes into view
+            $('.animate-show-in').each(function () {
+                const $el = $(this);
+                const elementTop = $el.offset().top;
+
+                if (!$el.hasClass('animate') && windowBottom > elementTop + 50) {
+                    $el.addClass('animate');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
