@@ -49,87 +49,122 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
-    <div class="header sticky top-0 z-50 flex justify-between px-22 items-center bg-primary-color py-6">
-        <div class="logo w-38"><img src="/assets/images/logo.png" alt=""></div>
-        <div class="navbar ml-32 flex justify-between space-x-8 items-center font-bold text-white">
+    <header
+        class="header sticky top-0 z-50 flex justify-between items-center bg-primary-color py-4 px-4 sm:py-2 md:px-22">
+        <div class="logo w-28 sm:w-38 md:w-38">
+            <img src="/assets/images/logo.png" alt="">
+        </div>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-3xl font-normal focus:outline-none">&#9776;</button>
+        </div>
+        <div class="hidden md:ml-32 md:flex justify-between space-x-8 items-center font-bold text-white">
             <a href="#">About</a>
             <a href="#">Service</a>
             <a href="#">Case Studies</a>
             <a href="#">Testimonials</a>
             <a href="#">Events</a>
             <a href="#">Growth Club</a>
+            <a href="#">Contract</a>
         </div>
-        <div class="w-1/5">
-            <a
-                class="bg-white px-6 py-2 font-bold rounded text-[#25ABE1] hover:text-white transition duration-300 hover:bg-[#232A61]">LET'S
-                TALK</a>
+    </header>
+    <div id="overlay" class="fixed inset-0 bg-blue-50/80 z-60 hidden"></div>
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 p-4 w-74 h-full bg-stone-200 transform -translate-x-full transition-transform text-sm duration-300 ease-in-out z-70 md:hidden">
+        <button id="menu-close" class="text-md font-bold pr-1 w-full text-end">&#10005;</button>
+        <div class="font-semibold flex flex-col h-screen overflow-y-auto pt-10">
+            <a href="#" class="hover:text-primary-color transition border-b-1 border-gray-50 p-4">About</a>
+            <a href="#" class="hover:text-primary-color transition border-b-1 border-gray-50 p-4">Service</a>
+            <a href="#" class="hover:text-primary-color transition border-b-1 border-gray-50 p-4">Case Studies</a>
+            <a href="#" class="hover:text-primary-color transition border-b-1 border-gray-50 p-4">Testimonials</a>
+            <a href="#" class="hover:text-primary-color transition border-b-1 border-gray-50 p-4">Events</a>
+            <a href="#" class="hover:text-primary-color transition border-b-1 border-gray-50 p-4">Growth Club</a>
+            <a href="#" class="hover:text-primary-color transition border-b-1 border-gray-50 p-4">Contract</a>
         </div>
     </div>
-    <div class="main bg-white pt-3 px-22">
-        <div class="bg-gray-100 px-3 py-5 flex items-center justify-between">
-            <span class="font-bold w-2/10 text-red-600 text-lg">Beware of Job Scams!</span>
-            <marquee class="mx-10 font-semibold text-black-500">We've noticed a surge in fake job offers via WhatsApp
-                claiming to be from Bizcope. Please be advised that we do not recruit through random messages. Find real
-                job opportunities on our Official Website, Facebook, or LinkedIn pages. Stay smart!</marquee>
+    <main class="bg-white pt-3 lg:px-22">
+        <div
+            class="bg-gray-100 px-3 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-start lg:justify-between gap-3">
+            <span class="font-bold sm:w-3/8 lg:w-2/10 text-red-600 text-lg text-center sm:text-left">
+                Beware of Job Scams!
+            </span>
+            <marquee behavior="scroll" direction="left"
+                class="font-semibold text-gray-900 w-full sm:mr-8 sm:w-5/8 lg:mx-10">
+                We've noticed a surge in fake job offers via WhatsApp claiming to be from Bizcope. Please be advised
+                that we do not recruit through random messages. Find real job opportunities on our Official Website,
+                Facebook, or LinkedIn pages. Stay smart!
+            </marquee>
         </div>
-        <div class="flex justify-between items-start my-16">
-            <div class="w-full lg:w-1/2">
-                <div>
+        <div class="flex justify-between items-start sm:my-2 lg:my-16 lg:flex-row sm:flex-col sm:flex-col-reverse">
+            <div class="sm:w-full lg:w-1/2">
+                <div class="sm:hidden">
                     <h1 class="text-5xl font-semibold mb-8 border-b-15 leading-6 border-cyan-600/30 inline-block">
                         Digital Marketing with</h1>
                     <br>
                     <h1 class="text-5xl font-semibold mb-12 border-b-15 leading-6 border-cyan-600/30 inline-block"> Skin
                         in the Game</h1>
                 </div>
-                <div class="w-4/5">
-                    <p class="pb-3 text-xl">With over a decade of experience in SEO, Web Dev, and the digital space,
+                <div class="lg:w-4/5 sm:px-5 sm:w-full">
+                    <p class="pb-3 lg:text-xl sm:text-md">With over a decade of experience in SEO, Web Dev, and the
+                        digital space,
                         we’ve proved that strategic thinking & expertise create fascinating results</p>
-                    <p class="pb-3 text-xl">Let’s put the skin in the game! 🤝</p>
-                    <a class="bg-[#25ABE1] px-6 py-4 text-white font-bold text-xl inline-block transition duration-300 hover:bg-[#232A61]"
+                    <p class="pb-3 lg:text-xl sm:text-md">Let’s put the skin in the game! 🤝</p>
+                    <a class="bg-[#25ABE1] sm:mb-4 sm:mt-5 lg:px-6 sm:px-4 lg:py-4 sm:py-2 text-white font-bold lg:text-xl sm:text-lg inline-block transition duration-300 hover:bg-[#232A61]"
                         href="#">Schedule a Call</a>
                 </div>
             </div>
-            <div class="w-1/2 px-10 pt-6">
-                <div class="flex items-center p-3 justify-evenly">
+            <div class="lg:w-1/2 sm:px-5 lg:px-10 lg:pt-6 sm:py-4 sm:w-full">
+                <div class="flex items-center p-3 justify-evenly sm:hidden">
                     <img src="/assets/images/videoImage1.png" class="w-15" alt="">
                     <img src="/assets/images/videoImage2.png" class="h-15" alt="">
                     <img src="/assets/images/videoImage3.png" class="h-15" alt="">
                 </div>
-                <div class="px-2 w-full aspect-video">
-                    <iframe class="w-full h-full"
+                <div class="lg:px-2 w-full aspect-video">
+                    <iframe class="w-full h-full bg-blue-500"
                         src="https://player.vimeo.com/video/494047399?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0#t="
                         frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="bg-gray-100 px-24 py-8">
-        <h1 class="font-bold text-4xl"><span class="text-[#232A61]">Featured</span> <span class="text-primary-color">
-                In</span></h1>
-        <div class="flex justify-between items-center pt-8 pb-4">
-            <img class="h-16" src="assets/images/featuredImage1.png" alt="">
-            <img class="h-13" src="assets/images/featuredImage2.png" alt="">
-            <img class="h-16" src="assets/images/featuredImage3.png" alt="">
-            <img class="h-15" src="assets/images/featuredImage4.png" alt="">
-            <img class="h-6" src="assets/images/featuredImage5.png" alt="">
-            <img class="h-15" src="assets/images/featuredImage6.png" alt="">
-            <img class="w-18" src="assets/images/featuredImage7.png" alt="">
-        </div>
-    </div>
-    <div class="px-22 flex justify-between items-start py-14">
-        <div class="w-full lg:w-1/2 relative">
-            <div class="absolute inset-0 bg-no-repeat bg-left bg-contain opacity-15 z-0"
-                style="background-image: url('/assets/images/bgImage2.png');">
-            </div>
-            <div class="relative z-10 flex items-start h-full py-20">
-                <img class="w-80 ps-8" src="/assets/images/bgImage1.png" alt="">
+    </main>
+    <div class="bg-gray-100 lg:px-24 sm:px-5 lg:py-8 sm:py-5">
+        <h1 class="font-bold sm:text-center lg:text-4xl sm:text-3xl">
+            <span class="text-[#232A61]">Featured</span>
+            <span class="text-primary-color">In</span>
+        </h1>
+        <div class="relative w-full pt-8 pb-4">
+            <div id="scrollContainer" class="flex items-center space-x-10 overflow-x-auto whitespace-nowrap cursor-grab active:cursor-grabbing hide-scrollbar select-none">
+                <img draggable="false" class="h-16" src="assets/images/featuredImage1.png" alt="">
+                <img draggable="false" class="h-13" src="assets/images/featuredImage2.png" alt="">
+                <img draggable="false" class="lg:h-16 sm:h-20" src="assets/images/featuredImage3.png" alt="">
+                <img draggable="false" class="lg:h-15 sm:h-29" src="assets/images/featuredImage4.png" alt="">
+                <img draggable="false" class="h-6" src="assets/images/featuredImage5.png" alt="">
+                <img draggable="false" class="lg:h-15 sm:h-27" src="assets/images/featuredImage6.png" alt="">
+                <img draggable="false" class="lg:w-18 sm:h-32" src="assets/images/featuredImage7.png" alt="">
             </div>
         </div>
-        <div class="w-1/2 pl-11">
+    </div>
+    <div class="lg:px-22 sm:px-5 flex justify-between sm:flex-col sm:items-center items-start lg:py-14">
+        <div class="sm:w-full lg:w-1/2 relative">
+            <div class="absolute sm:w-full inset-0 bg-no-repeat bg-left bg-contain opacity-15 z-0 lg:bg-[url('/assets/images/bgImage2.png')]">
+            </div>
+            <div class="relative z-10 flex items-start h-full lg:py-20">
+                <img class="lg:w-80 sm:w-full lg:ps-8 sm:p-8" src="/assets/images/bgImage1.png" alt="">
+            </div>
+        </div>
+        <div class="lg:w-1/2 lg:pl-11 w-full">
             <h1 class="text-4xl mb-5 font-bold"><span class="text-[#232A61]">Why</span><span class="text-primary-color">
                     Bizcope</span></h1>
             <div class="h-1 bg-primary-color w-25 mb-5"></div>
@@ -144,7 +179,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-gray-100 px-22 py-14 flex">
+    <div class="bg-gray-100 lg:px-22 sm:px-5 py-14 flex">
         <div class="w-full lg:w-1/2">
             <h1 class="text-4xl font-bold mb-8">
                 <span class="text-[#232A61]">Grow Your Business With</span><br>
@@ -188,7 +223,7 @@
                 we don’t just say but also show you the proof from our real projects.</p>
         </div>
     </div>
-    <div class="service px-22 py-14 pb-7">
+    <div class="service lg:px-22 sm:px-5 py-14 pb-7">
         <h1 class="text-4xl mb-5 font-bold"><span class="text-[#232A61]">Our </span><span class="text-primary-color">
                 Services</span></h1>
         <div class="h-1 bg-primary-color w-20 mb-13"></div>
@@ -267,7 +302,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-gray-100 px-22 py-15">
+    <div class="bg-gray-100 lg:px-22 sm:px-5 py-15">
         <h1 class="text-4xl mb-5 font-bold">
             <span class="text-[#232A61]">Testimonials From Our </span>
             <span class="text-primary-color">Clients</span>
@@ -291,7 +326,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-primary-color px-22 py-15">
+    <div class="bg-primary-color lg:px-22 sm:px-5 py-15">
         <h1 class="text-4xl text-white font-bold capitalize mb-8">We are trusted by the best</h1>
         <div class="flex flex-wrap justify-between gap-5">
             <img class="bg-white w-54 px-8 py-3 animate-show-in" src="assets/images/Logitech-Logo.png" alt="">
@@ -321,7 +356,7 @@
                 alt="">
         </div>
     </div>
-    <div class="bg-primary-color px-22 py-30 text-center text-white">
+    <div class="bg-primary-color lg:px-22 sm:px-5 py-30 text-center text-white">
         <h2 class="font-bold text-5xl capitalize mb-5">Ready to build your brand?</h2>
         <h2 class="font-bold text-2xl mb-10">YOU ARE JUST ONE STEP AWAY TO EXPERIENCE THE PROGRESS.</h2>
         <a href="#"
@@ -329,7 +364,7 @@
             Let Us Build Your Business
         </a>
     </div>
-    <div class="bg-gray-100 px-22 py-14">
+    <div class="bg-gray-100 lg:px-22 sm:px-5 py-14">
         <h1 class="text-4xl mb-5 font-bold">
             <span class="text-[#232A61]">Contributions To The </span>
             <span class="text-primary-color">Community</span>
@@ -358,7 +393,8 @@
             </div>
         </div>
     </div>
-    <div class="bg-primary-color px-22 space-x-10 py-14 flex justify-between" id="counterSection">
+    <div class="bg-primary-color lg:px-22 sm:px-5 space-x-10 py-14 flex md:flex-row flex-col justify-between"
+        id="counterSection">
         <div class="bg-white p-12 text-center w-full">
             <h1 class="counter text-primary-color text-5xl font-bold" data-target="14">0+</h1>
             <h3 class="text-2xl font-bold">
@@ -381,7 +417,7 @@
             </h3>
         </div>
     </div>
-    <div class="bg-gray-100 px-22 py-14">
+    <div class="bg-gray-100 lg:px-22 sm:px-5 py-14">
         <h1 class="text-4xl mb-5 font-bold">
             <span class="text-[#232A61]">Inside Bizcope </span>
             <span class="text-primary-color">Minds</span>
@@ -402,7 +438,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-primary-color px-22 py-14 flex h-full items-center justify-between">
+    <div class="bg-primary-color lg:px-22 sm:px-5 py-14 flex h-full items-center justify-between">
         <div class="bg-white w-1/2 rounded">
             <h1 class="text-2xl py-4 px-12 rounded-t text-white font-bold bg-[#232a61]">Get A Free 30-Minute Strategy
                 Session</h1>
@@ -495,7 +531,7 @@
                 href=""> Get In Touch</a>
         </div>
     </div>
-    <div class="bg-white px-22 py-16 flex justify-between">
+    <div class="bg-white lg:px-22 sm:px-5 py-16 flex justify-between">
         <div class="w-1/2 mr-10">
             <h1 class="text-4xl mb-5 font-bold">
                 <span class="text-[#232A61]">Get in </span>
@@ -551,11 +587,11 @@
             </div>
         </div>
     </div>
-    <div class="px-22 mb-15">
+    <div class="lg:px-22 sm:px-5 mb-15">
         <img src="assets/images/above-the-footer-bizcope-reward.png" alt="">
     </div>
-    <div class="footer bg-primary-color pt-10 px-22">
-        <div class="flex justify-between mb-5">
+    <footer class="bg-primary-color pt-10 lg:px-22 sm:px-5">
+        <div class="flex md:flex-row flex-col justify-between mb-5">
             <div class="text-white flex flex-col justify-start border-r-2 border-gray-200/30 pr-8">
                 <h2 class="text-xl font-bold mb-4">Company</h2>
                 <a class="flex justify-start items-center ml-1 text-md" href=""><i
@@ -592,7 +628,7 @@
                         class="text-[6px] fas fa-circle mr-5"></i>
                     Video Production</a>
             </div>
-            <div class="bg-white rounded-md mb-20 p-6 ml-8 w-60">
+            <div class="bg-white rounded-md mb-20 p-6 ml-8 w-60X">
                 <h2 class="text-xl text-[#232a61] mb-5 font-bold">Bangladesh Office</h2>
                 <div class="text-lg ml-1">
                     <div class="flex items-start">
@@ -609,7 +645,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white rounded-md mb-20 p-6 ml-3 w-60">
+            <div class="bg-white rounded-md mb-20 p-6 ml-3 w-60X">
                 <h2 class="text-xl text-[#232a61] mb-5 font-bold">USA Office</h2>
                 <div class="text-lg ml-1">
                     <div class="flex items-start">
@@ -626,7 +662,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white rounded-md mb-20 p-6 ml-3 w-60">
+            <div class="bg-white rounded-md mb-20 p-6 ml-3 w-60X">
                 <h2 class="text-xl text-[#232a61] mb-5 font-bold">Malaysia Office</h2>
                 <div class="text-lg ml-1">
                     <div class="flex items-start">
@@ -667,7 +703,7 @@
                     href=""><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
-    </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         let counted = false;
@@ -723,6 +759,68 @@
                     $el.addClass('animate');
                 }
             });
+        });
+
+
+        $(document).ready(function () {
+            $('#menu-toggle').click(function () {
+                $('#mobile-menu').removeClass('-translate-x-full');
+                $('#overlay').removeClass('hidden');
+            });
+
+            $('#menu-close, #overlay').click(function () {
+                $('#mobile-menu').addClass('-translate-x-full');
+                $('#overlay').addClass('hidden');
+            });
+
+
+
+        });
+
+        $(function () {
+            const $scrollContainer = $('#scrollContainer');
+            const $content = $scrollContainer.children().clone();
+            $scrollContainer.append($content);
+            const scrollWidth = $scrollContainer[0].scrollWidth / 2;
+            $scrollContainer.scrollLeft(scrollWidth);
+
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            $scrollContainer.on('mousedown', function (e) {
+                isDown = true;
+                $scrollContainer.addClass('active');
+                startX = e.pageX - $scrollContainer.offset().left;
+                scrollLeft = $scrollContainer.scrollLeft();
+            });
+
+            $scrollContainer.on('mouseleave mouseup', function () {
+                isDown = false;
+                $scrollContainer.removeClass('active');
+            });
+
+            $scrollContainer.on('mousemove', function (e) {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - $scrollContainer.offset().left;
+                const walk = (x - startX) * 2;
+                $scrollContainer.scrollLeft(scrollLeft - walk);
+                checkScrollPosition();
+            });
+            $scrollContainer.on('scroll', function () {
+                if (!isDown) checkScrollPosition();
+            });
+
+            function checkScrollPosition() {
+                const maxScroll = $scrollContainer[0].scrollWidth;
+                const halfScroll = maxScroll / 2;
+                if ($scrollContainer.scrollLeft() <= 0) {
+                    $scrollContainer.scrollLeft(halfScroll);
+                } else if ($scrollContainer.scrollLeft() >= maxScroll - $scrollContainer.outerWidth()) {
+                    $scrollContainer.scrollLeft(halfScroll - $scrollContainer.outerWidth());
+                }
+            }
         });
     </script>
 </body>
