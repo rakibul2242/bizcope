@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <!-- <title>Bizcope | SEO, Web Development & Digital Marketing Agency</title> -->
-    <title>Document</title>
+    <title>Bizcope | SEO, Web Development & Digital Marketing Agency</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
     <style>
         .bg-primary-color {
@@ -435,19 +434,16 @@
         <div class="h-1 bg-primary-color w-34 xl:w-20 xl:mb-13 mb-11"></div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-3 gap-7">
-            <!-- First Video -->
             <div class="w-full md:col-span-2 xl:col-span-1">
                 <iframe class="w-full aspect-video bg-[black]"
                     src="https://player.vimeo.com/video/531884650?autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0"
                     frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <!-- Second Video -->
             <div class="w-full">
                 <iframe class="w-full aspect-video"
                     src="https://player.vimeo.com/video/531871073?autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0"
                     frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <!-- Third Video -->
             <div class="w-full">
                 <iframe class="w-full aspect-video"
                     src="https://player.vimeo.com/video/507052450?autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0"
@@ -857,7 +853,7 @@
                 </div>
             </div>
         </div>
-        <div class="sm:grid flex items-center flex-col grid-cols-1 md:grid-cols-[40%_60%] lg:grid-cols-2 xl:flex xl:justify-between xl:items-center gap-4 text-white mt-2 p-3 pb-5 border-t-1 border-gray-100">
+        <div class="sm:grid flex items-center flex-col grid-cols-1 md:grid-cols-[40%_60%] lg:grid-cols-2 xl:flex xl:flex-row xl:justify-between xl:items-center gap-4 text-white mt-2 p-3 pb-5 border-t-1 border-gray-100">
             <div class="flex items-center md:flex-row lg:flex-row xl:flex-row flex-col">
                 <a href="" class="bfg-[#232A61]"><i
                         class="p-3 rounded-full text-xl font-bold bg-[#232A61] text-white fas fa-arrow-circle-down"></i></a>
@@ -891,7 +887,6 @@
             const scrollTop = $(window).scrollTop();
             const windowBottom = scrollTop + $(window).height();
 
-            // Counter animation (only once when section is in view)
             const counterSection = $('#counterSection');
             if (!counted && counterSection.length) {
                 const sectionTop = counterSection.offset().top;
@@ -915,8 +910,6 @@
                     counted = true;
                 }
             }
-
-            // Animate ALL .animate-up items at once (only once)
             if (!animated) {
                 $('.animate-up').each(function () {
                     const elementTop = $(this).offset().top;
@@ -927,8 +920,6 @@
                     }
                 });
             }
-
-            // Animate EACH .animate-show-in when it comes into view
             $('.animate-show-in').each(function () {
                 const $el = $(this);
                 const elementTop = $el.offset().top;
@@ -1018,13 +1009,11 @@
             }
         });
         $(function () {
-        // Toggle main service submenu
         $('#service-toggle').click(function () {
             $('#service-submenu').slideToggle();
             $('#service-arrow').toggleClass('rotate-180');
         });
 
-        // Nested submenu toggles
         $('#organic-toggle').click(function () {
             $('#organic-submenu').slideToggle();
             $('#organic-arrow').toggleClass('rotate-180');
@@ -1042,7 +1031,6 @@
             $('#other-arrow').toggleClass('rotate-180');
         });
 
-        // Close menu button
         $('#menu-close').click(function () {
             $('#mobile-menu').addClass('-translate-x-full');
         });
