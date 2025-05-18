@@ -119,7 +119,7 @@
                         class="lg:text-5xl lg:border-b-15 lg:leading-6 lg:border-cyan-600/30 md:text-[#25ABE1] font-semibold md:text-3xl lg:mb-12 inline-block">
                         Skin in the Game</h1>
                 </div>
-                <div class="lg:w-4/5 lg:px-5 w-full md:text-lg">
+                <div class="lg:w-4/5 px-5 w-full md:text-lg">
                     <p class="pb-3 lg:text-xl text-md">With over a decade of experience in SEO, Web Dev, and the
                         digital space,
                         we’ve proved that strategic thinking & expertise create fascinating results</p>
@@ -329,7 +329,7 @@
         </h1>
         <div class="h-1 bg-primary-color w-34 lg:w-20 lg:mb-13 mb-11"></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 gap-7">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-3 gap-7">
             <!-- First Video -->
             <div class="w-full md:col-span-2 lg:col-span-1">
                 <iframe class="w-full aspect-video bg-[black]"
@@ -466,31 +466,32 @@
         <div class="h-1 bg-primary-color w-22 mb-13"></div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <!-- Image 1 -->
-            <div class="overflow-hidden h-60">
+            <div class="overflow-hidden h-60 lg:h-auto">
                 <img src="assets/images/community_image1.jpg" alt=""
+                    class="w-full h-full object-cover transform scale-107" />
+            </div>
+            
+            <!-- Image 2 -->
+            <div class="overflow-hidden h-60 md:order-4 md:h-auto lg:h-auto">
+                <img src="assets/images/community_image2.jpg" alt=""
                     class="w-full h-full object-cover transform scale-107" />
             </div>
 
             <!-- Image 3 -->
-            <div class="overflow-hidden h-60 md:order-3 lg:order-none">
+            <div class="overflow-hidden h-60 md:h-auto md:order-3 lg:row-span-2 md:row-span-2 lg:order-none lg:h-auto">
                 <img src="assets/images/community_image3.jpg" alt=""
                     class="w-full h-full object-cover transform scale-107" />
             </div>
 
             <!-- Image 4 -->
-            <div class="overflow-hidden h-60 md:order-5 lg:col-start-3 lg:row-start-1">
+            <div class="overflow-hidden h-60 md:order-5 lg:col-start-3 lg:row-start-1 lg:h-auto">
                 <img src="assets/images/community_image4.jpg" alt=""
                     class="w-full h-full object-cover transform scale-107" />
             </div>
 
-            <!-- Image 2 -->
-            <div class="overflow-hidden h-60 md:order-4 md:h-auto lg:col-start-2 lg:row-span-2 lg:row-start-1">
-                <img src="assets/images/community_image2.jpg" alt=""
-                    class="w-full h-full object-cover transform scale-107" />
-            </div>
 
             <!-- Image 5 -->
-            <div class="overflow-hidden h-60 md:order-6 lg:col-start-3 lg:row-start-2">
+            <div class="overflow-hidden h-60 lg:h-auto md:order-6 lg:col-start-3 lg:row-start-2">
                 <img src="assets/images/community_image5.jpg" alt=""
                     class="w-full h-full object-cover transform scale-107" />
             </div>
@@ -500,21 +501,21 @@
         id="counterSection">
         <div class="bg-white p-12 text-center w-full">
             <h1 class="counter text-primary-color text-5xl font-bold" data-target="14">0+</h1>
-            <h3 class="text-2xl font-bold">
+            <h3 class="lg:text-2xl text-lg font-bold">
                 <span class="text-[#232A61]">Years Of </span>
                 <span class="text-primary-color">Experience</span>
             </h3>
         </div>
         <div class="bg-white p-12 text-center w-full">
             <h1 class="counter text-primary-color text-5xl font-bold" data-target="1000">0+</h1>
-            <h3 class="text-2xl font-bold">
+            <h3 class="lg:text-2xl text-lg font-bold">
                 <span class="text-[#232A61]">Happy </span>
                 <span class="text-primary-color">Experience</span>
             </h3>
         </div>
         <div class="bg-white p-12 text-center w-full">
             <h1 class="counter text-primary-color text-5xl font-bold" data-target="51">0+</h1>
-            <h3 class="text-2xl font-bold">
+            <h3 class="lg:text-2xl text-lg font-bold">
                 <span class="text-[#232A61]">Brains To </span>
                 <span class="text-primary-color">Support</span>
             </h3>
@@ -782,7 +783,7 @@
                     Video Production</a>
             </div>
             <div class="bg-white rounded-md lg:mb-20 p-6 sm:mb-6 lg:ml-8 w-60X">
-                <h2 class="text-xl text-[#232a61] mb-5 font-bold">Bangladesh Office</h2>
+                <h2 class="text-xl text-[#232a61] mb-5 font-bold flex items-center justify-start">Bangladesh <img class="w-5 h-5 inline" src="assets/images/bangladesh_logo.svg"></h2>
                 <div class="text-lg ml-1">
                     <div class="flex items-start">
                         <i class="text-primary-color pr-2 pt-2 text-md fas fa-map-marker-alt"></i>
@@ -799,7 +800,7 @@
                 </div>
             </div>
             <div class="bg-white rounded-md lg:mb-20 p-6 sm:mb-6 lg:ml-3 w-60X">
-                <h2 class="text-xl text-[#232a61] mb-5 font-bold">USA Office</h2>
+                <h2 class="text-xl text-[#232a61] mb-5 font-bold flex items-center justify-start">USA <img class="w-5 h-5 inline" src="assets/images/usa_logo.svg"></h2>
                 <div class="text-lg ml-1">
                     <div class="flex items-start">
                         <i class="text-primary-color pr-2 pt-2 text-md fas fa-map-marker-alt"></i>
@@ -816,7 +817,7 @@
                 </div>
             </div>
             <div class="bg-white rounded-md lg:mb-20 p-6 sm:mb-6 lg:ml-3 w-60X">
-                <h2 class="text-xl text-[#232a61] mb-5 font-bold">Malaysia Office</h2>
+                <h2 class="text-xl text-[#232a61] mb-5 font-bold flex items-center justify-start">Malaysia <img class="w-5 h-5 inline" src="assets/images/malasia_logo.svg"></h2>
                 <div class="text-lg ml-1">
                     <div class="flex items-start">
                         <i class="text-primary-color pr-2 pt-2 text-md fas fa-map-marker-alt"></i>

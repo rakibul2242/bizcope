@@ -1,2 +1,3 @@
 # bizcope
-responsive -> 167 line -> Why Bizcope
+responsive -> footer section-> lg size.
+and others for responsive
