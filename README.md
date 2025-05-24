@@ -12,9 +12,8 @@ bizcope-source-{
 }
 
 git add .
-git commit -m ""
+git commit -m "home-modify"
 git push
 
 
-
-24 may office :- xl->header completed
+25 may home :- xl complete . install tailwind (castom screensize and css), review all design
