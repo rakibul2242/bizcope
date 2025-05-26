@@ -15,8 +15,4 @@ git add .
 git commit -m "home-modify"
 git push
 
-
-25 may home :- xl complete . install tailwind (castom screensize and css), review all design
-
-
-270 
+26 office -> start from lg: {section}We are trusted by the best . & border width check 
