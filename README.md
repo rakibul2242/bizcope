@@ -15,4 +15,4 @@ git add .
 git commit -m "home-modify"
 git push
 
-26 office -> start from lg: {section}We are trusted by the best . & border width check 
+26 office -> start from xl: {section}Contributions To The Community
