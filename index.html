@@ -15,26 +15,6 @@
     <title>Bizcope | SEO, Web Development & Digital Marketing Agency</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     <style>
-        .font-open {
-            font-family: "Open Sans", Sans-serif;
-        }
-
-        .xl:text-40 {
-            font-size: 40px;
-        }
-
-        .font-nunito {
-            font-family: "Nunito Sans", Sans-serif;
-        }
-
-        .bg-primary-color {
-            background-color: #25ABE1;
-        }
-
-        .text-primary-color {
-            color: #25ABE1;
-        }
-
         @keyframes animateShowIn {
             0% {
                 opacity: 0;
@@ -90,7 +70,12 @@
                     },
                     fontSize: {
                         '15': '15px',
+                        '17': '17px',
+                        '22': '22px',
+                        '25': '25px',
                         '26': '26px',
+                        '28': '28px',
+                        '35': '35px',
                         '40': '40px',
                     },
                     colors: {
@@ -105,8 +90,8 @@
 <body>
     <header class="header sticky top-0 z-40 bg-primary-color">
         <div
-            class="flex justify-between items-center px-5 md:px-3 py-2 md:py-4 lg:py-9 xl:py-7 relative xl:w-[1205px] xl:m-auto">
-            <div class="w-[26%] md:w-[13%] lg:w-[14%]___xl:w-[13%]">
+            class="flex justify-between items-center px-5 md:px-3 py-2 md:py-4 lg:py-9 xl:py-7 relative xl:m-auto xl:max-w-[1200px]">
+            <div class="w-[26%] md:w-[13%]">
                 <img class="w-full" src="assets/images/logo.png" alt="">
             </div>
             <div class="md:hidden">
@@ -114,10 +99,11 @@
                         class="fa-light fa-bars"></i></button>
             </div>
             <div
-                class="hidden md:mr-[2%] md:flex md:justify-center lg:justify-evenly lg:w-4/6 items-center font-nunito text-15 font-extrabold text-white z-40">
+                class="hidden md:mr-[2%] md:flex md:justify-center lg:justify-evenly lg:w-4/6 xl:w-auto items-center font-nunito text-15 font-extrabold text-white z-40">
                 <div class="flex items-center justify-center space-x-9 xl:space-x-8 md:space-x-2 lg:space-x-3">
                     <a href="#">About</a>
-                    <a href="#" class="transition serviceBtn flex items-center justify-center"><span>Service</span> <i class="pr-2 pl-1 fa-solid fa-angle-down"></i></a>
+                    <a href="#" class="transition serviceBtn flex items-center justify-center"><span>Service</span> <i
+                            class="pr-2 pl-1 fa-solid fa-angle-down"></i></a>
                     <a href="#">Case Studies</a>
                     <a href="#">Testimonials</a>
                     <a href="#">Events</a>
@@ -266,33 +252,33 @@
         </div>
     </div>
     <main class="bg-white">
-        <div class="pt-3 xl:w-[1200px] xl:m-auto">
+        <div class="pt-3 xl:m-auto xl:max-w-[1200px]">
             <div class="bg-gray-100 px-3 py-5 flex flex-row items-center justify-between gap-3">
-                <span class="font-bold w-1/2 sm:w-3/6 md:w-2/6 xl:w-1/6 text-[#D50000] text-lg text-left">
+                <span class="font-bold w-1/2 sm:w-3/6 md:w-2/6 xl:w-2/5 text-[#D50000] text-lg text-left">
                     Beware of Job Scams!
                 </span>
                 <marquee behavior="scroll" direction="left"
-                    class="font-semibold text-gray-900 text-base mx-8 md:ml-4 md:mr-10 w-2/5 sm:w-5/6 xl:mx-10">
+                    class="font-semibold text-gray-900 text-base mx-8 md:ml-4 md:mr-10 w-2/5 sm:w-5/6 xl:w-auto xl:ml-6 xl:mr-10">
                     We've noticed a surge in fake job offers via WhatsApp claiming to be from Bizcope. Please be advised
                     that we do not recruit through random messages. Find real job opportunities on our Official Website,
                     Facebook, or LinkedIn pages. Stay smart!
                 </marquee>
             </div>
             <div
-                class="flex justify-between items-start xl:items-center md:px-12 xl:px-0 py-3 md:py-20 md:flex-col xl:flex-row flex-col-reverse">
+                class="flex justify-between items-start xl:items-center md:px-12 xl:px-1 py-3 md:py-20 md:flex-col xl:flex-row flex-col-reverse">
                 <div class="w-full xl:w-1/2">
                     <div class="hidden md:block mb-10 font-nunito">
                         <h1 class="font-bold md:text-26 xl:text-[45px] xl:leading-3 xl:mb-12">
                             <span
-                                class="xl:border-b-15 xl:border-[#cbe8f7] md:text-[#232A61] xl:text-black xl:mb-8 inline-block">
+                                class="xl:border-b-[15px] xl:border-[#cbe8f7] md:text-[#232A61] xl:text-black xl:mb-10 inline-block">
                                 Digital Marketing with </span>
                             <span
-                                class="xl:border-b-15 xl:border-[#cbe8f7] md:text-[#25ABE1] xl:text-black inline-block">
+                                class="xl:border-b-[15px] xl:border-[#cbe8f7] md:text-[#25ABE1] xl:text-black inline-block">
                                 Skin in the Game</span>
                         </h1>
                     </div>
                     <div class="xl:w-4/5 px-5 lg:px-0 md:px-0 w-full md:text-lg">
-                        <p class="pb-3 font-normal font-open text-base md:text-lg xl:text-xl text-justify">With over a
+                        <p class="pb-3 font-normal font-open text-base md:text-lg xl:text-xl text-justify xl:text-left">With over a
                             decade of
                             experience in SEO, Web Dev, and the
                             digital space,
@@ -319,27 +305,25 @@
         </div>
     </main>
     <div class="bg-[#F2F2F2] px-5 md:px-8 xl:px-24 py-7 xl:py-9">
-        <h1 class="font-extrabold font-nunito text-center xl:text-left xl:text-40 text-3xl mb-5">
+        <h1 class="font-extrabold font-nunito text-center xl:text-left text-3xl md:text-25 xl:text-35 mb-5">
             <span class="text-[#232A61]">Featured</span>
             <span class="text-primary-color">In</span>
         </h1>
         <div class="relative w-full">
             <div id="scrollContainer"
                 class="flex items-center xl:justify-between space-x-10 sm:mb-2 overflow-x-auto xl:overflow-visible whitespace-nowrap xl:whitespace-normal cursor-grab xl:cursor-default active:cursor-grabbing xl:active:cursor-default hide-scrollbar select-none xl:select-auto">
-                <img draggable="false" class="w-[20%] md:w-[12%] xl:h-15" src="assets/images/featuredImage1.png"
+                <img draggable="false" class="w-[20%] md:w-[12%] xl:w-[11%]" src="assets/images/featuredImage1.png" alt="">
+                <img draggable="false" class="w-[20%] md:w-[12%] xl:w-[10%]" src="assets/images/featuredImage2.png" alt="">
+                <img draggable="false" class="w-[20%] md:w-[12%] xl:w-[9%]" src="assets/images/featuredImage3.png" alt="">
+                <img draggable="false" class="hidden xl:block xl:w-[4%] " src="assets/images/featuredImage4.png"
                     alt="">
-                <img draggable="false" class="w-[20%] md:w-[12%] xl:h-12" src="assets/images/featuredImage2.png"
+                <img draggable="false" class="w-[20%] md:w-[10%]" src="assets/images/featuredImage5.png" alt="">
+                <img draggable="false" class="w-[20%] md:w-[12%] xl:w-[5%] " src="assets/images/featuredImage6.png"
                     alt="">
-                <img draggable="false" class="w-[20%] md:w-[12%] xl:h-16" src="assets/images/featuredImage3.png"
-                    alt="">
-                <img draggable="false" class="hidden xl:block 2022 xl:h-15 "
+                <img draggable="false" class="xl:hidden w-[20%] md:w-[9%]"
                     src="assets/images/featuredImage4.png" alt="">
-                <img draggable="false" class="w-[20%] md:w-[12%]" src="assets/images/featuredImage5.png" alt="">
-                <img draggable="false" class="w-[20%] md:w-[12%] xl:h-15 " src="assets/images/featuredImage6.png"
+                <img draggable="false" class="w-[20%] md:w-[12%] xl:w-[5%] " src="assets/images/featuredImage7.png"
                     alt="">
-                <img draggable="false" class="xl:hidden w-[20%] md:w-[12%] xl:h-15"
-                    src="assets/images/featuredImage4.png" alt="">
-                <img draggable="false" class="w-[20%] md:w-[12%] xl:h-18 " src="assets/images/featuredImage7.png" alt="">
             </div>
         </div>
     </div>
@@ -353,7 +337,7 @@
             </div>
         </div>
         <div class="w-full xl:w-1/2 xl:pl-11">
-            <h1 class="xl:text-40 text-2xl md:text-3xl mb-5 font-extrabold font-nunito">
+            <h1 class="xl:text-40 text-2xl md:text-28 mb-5 font-extrabold font-nunito">
                 <span class="text-[#232A61]">Why</span>
                 <span class="text-primary-color">Bizcope</span>
             </h1>
@@ -373,11 +357,11 @@
     </div>
     <div class="bg-gray-100 px-5 md:px-7 xl:px-24 py-10 md:py-13 xl:py-14 flex xl:flex-row flex-col-reverse">
         <div class="w-full xl:w-1/2">
-            <h1 class="xl:text-40 text-2xl md:text-3xl font-extrabold font-nunito xl:mb-8 mb-5">
+            <h1 class="xl:text-40 text-2xl md:text-28 font-extrabold font-nunito xl:mb-8 mb-5">
                 <span class="text-[#232A61]">Grow Your Business With</span><br>
                 <span class="text-primary-color">The Best Online Marketing Company</span>
             </h1>
-            <div class="pt-[4px] w-[20%] sm:w-30 md:w-53 xl:w-20 bg-primary-color mb-5 xl:mb-8"></div>
+            <div class="pt-[4px] w-[20%] md:w-[22%] xl:w-20 bg-primary-color mb-5 xl:mb-8"></div>
             <p class="text-justify text-lg font-normal font-open xl:font-medium leading-7">Through our
                 proven Digital Marketing services we can help you get more traffic, help you convert those traffic into
                 customers,
@@ -424,11 +408,11 @@
         </div>
     </div>
     <div class="service xl:px-24 px-5 md:px-7 xl:py-14 py-8 xl:pb-7 pb-18">
-        <h1 class="xl:text-40 text-2xl md:text-3xl mb-5 font-extrabold font-nunito">
+        <h1 class="xl:text-40 text-2xl md:text-28 mb-5 font-extrabold font-nunito">
             <span class="text-[#232A61]">Our </span>
             <span class="text-primary-color">Services</span>
         </h1>
-        <div class="pt-[5px] bg-primary-color w-[20%] sm:w-30 md:w-38 xl:w-20 mb-8"></div>
+        <div class="pt-[5px] bg-primary-color w-[20%] md:w-[16%] xl:w-20 mb-8"></div>
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 md:gap-9 xl:gap-14">
             <div class="shadow-xl border border-gray-100 px-5 md:px-7 xl:px-6 py-4 xl:py-7 flex flex-col">
                 <h3 class="text-2xl font-extrabold font-nunito text-[#232a61] mb-4">Digital Marketing</h3>
@@ -508,11 +492,11 @@
         </div>
     </div>
     <div class="bg-gray-100 xl:px-24 px-5 md:px-7 xl:py-15 py-8">
-        <h1 class="xl:text-40 text-2xl md:text-3xl mb-5 font-extrabold font-nunito">
+        <h1 class="xl:text-40 text-2xl md:text-28 mb-5 font-extrabold font-nunito">
             <span class="text-[#232A61]">Testimonials From Our </span>
             <span class="text-primary-color">Clients</span>
         </h1>
-        <div class="pt-[5px] bg-primary-color w-[22%] sm:w-33 xl:w-20 mb-11 xl:mb-13"></div>
+        <div class="pt-[5px] bg-primary-color w-[22%] md:w-[12%] mb-11 xl:mb-13"></div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 md:gap-3">
             <div class="w-full md:col-span-2 xl:col-span-1">
@@ -534,7 +518,7 @@
     </div>
 
     <div class="bg-primary-color xl:px-24 px-5 md:px-7 xl:py-15 py-8">
-        <h1 class="xl:text-40 text-2xl text-white font-bold capitalize xl:mb-8 mb-5">
+        <h1 class="text-2xl md:text-28 xl:text-40 text-white font-bold capitalize xl:mb-8 mb-5">
             We are trusted by the best
         </h1>
         <div class="grid grid-cols-5 md:gap-5 xl:gap-6 gap-1">
@@ -568,19 +552,24 @@
             <div class="bg-white w-full xl:h-24 lg:h-22 md:h-[74px] sm:h-16 h-12 xl:px-8 p-2 xl:py-3 animate-show-in">
                 <img class="h-full w-full object-contain" src="assets/images/LOGO-UNDIRA.png" alt="">
             </div>
-            <div class="bg-white w-full xl:h-25 lg:h-26 sm:h-[72px] md:h-[86px] h-14 xl:px-8 p-2 xl:py-3 animate-show-in">
+            <div
+                class="bg-white w-full xl:h-25 lg:h-26 sm:h-[72px] md:h-[86px] h-14 xl:px-8 p-2 xl:py-3 animate-show-in">
                 <img class="h-full w-full object-contain" src="assets/images/Aerobo-logo.png" alt="">
             </div>
-            <div class="bg-white w-full xl:h-25 lg:h-26 sm:h-[72px] md:h-[86px] h-14 xl:px-8 p-2 xl:py-3 animate-show-in">
+            <div
+                class="bg-white w-full xl:h-25 lg:h-26 sm:h-[72px] md:h-[86px] h-14 xl:px-8 p-2 xl:py-3 animate-show-in">
                 <img class="h-full w-full object-contain" src="assets/images/MEDEASY-LOGO.png" alt="">
             </div>
-            <div class="bg-white w-full xl:h-25 lg:h-26 sm:h-[72px] md:h-[86px] h-14 xl:px-8 p-2 xl:py-3 animate-show-in">
+            <div
+                class="bg-white w-full xl:h-25 lg:h-26 sm:h-[72px] md:h-[86px] h-14 xl:px-8 p-2 xl:py-3 animate-show-in">
                 <img class="h-full w-full object-contain" src="assets/images/access-plus-wa-logo.png" alt="">
             </div>
-            <div class="bg-white w-full xl:h-25 lg:h-26 sm:h-[72px] md:h-[86px] h-14 xl:px-8 p-2 xl:py-3 animate-show-in">
+            <div
+                class="bg-white w-full xl:h-25 lg:h-26 sm:h-[72px] md:h-[86px] h-14 xl:px-8 p-2 xl:py-3 animate-show-in">
                 <img class="h-full w-full object-contain" src="assets/images/brac_bank.png" alt="">
             </div>
-            <div class="bg-white w-full xl:h-25 lg:h-26 sm:h-[72px] md:h-[86px] h-14 xl:px-8 p-2 xl:py-3 animate-show-in">
+            <div
+                class="bg-white w-full xl:h-25 lg:h-26 sm:h-[72px] md:h-[86px] h-14 xl:px-8 p-2 xl:py-3 animate-show-in">
                 <img class="h-full w-full object-contain" src="assets/images/Canadian-Global.png" alt="">
             </div>
             <div class="bg-white w-full xl:h-32 h-22 sm:h-28 md:h-36 xl:px-8 p-2 xl:py-3 animate-show-in">
@@ -602,31 +591,32 @@
     </div>
 
     <div class="bg-primary-color xl:px-24 px-5 md:px-7 xl:py-30 py-16 text-center text-white">
-        <h2 class="font-extrabold font-nunito xl:text-5xl md:text-4xl text-2xl capitalize mb-5">Ready to build your
+        <h2 class="font-extrabold font-nunito xl:text-5xl md:text-35 text-2xl capitalize mb-5">Ready to build your
             brand?</h2>
-        <h2 class="font-bold xl:text-2xl md:text-2xl text-lg mb-10">YOU ARE JUST ONE STEP AWAY TO EXPERIENCE THE
+        <h2 class="font-extrabold font-nunito text-17 md:text-25 xl:text-2xl mb-10">YOU ARE JUST ONE STEP AWAY TO EXPERIENCE THE
             PROGRESS.</h2>
         <a href="#"
-            class="bg-white inline-block xl:text-xl md:text-2xl text-base leading-none xl:font-bold font-bold font-nunito xl:px-6 px-4 xl:py-4 py-3 transition duration-300 text-[#25ABE1] hover:text-white hover:bg-[#232A61]">
+            class="bg-white inline-block xl:text-xl md:text-22 text-base leading-none xl:font-bold font-bold font-nunito px-4 md:px-6 py-3 md:py-4 transition duration-300 text-[#25ABE1] hover:text-white hover:bg-[#232A61]">
             Let Us Build Your Business
         </a>
     </div>
     <div class="bg-gray-100 px-5 md:px-7 xl:px-24 py-10">
-        <h1 class="xl:text-40 text-2xl md:text-3xl mb-5 font-extrabold font-nunito">
+        <h1 class="xl:text-40 text-2xl md:text-28 mb-5 font-extrabold font-nunito">
             <span class="text-[#232A61]">Contributions To The </span>
             <span class="text-primary-color">Community</span>
         </h1>
-        <div class="pt-[5px] bg-primary-color w-[21%] md:w-27 mb-14"></div>
+        <div class="pt-[5px] bg-primary-color w-[21%] md:w-[14%] mb-14"></div>
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-            <div class="overflow-hidden h-60 md:h-auto xl:h-auto">
+            <div class="overflow-hidden h-60 xl:h-auto">
                 <img src="assets/images/community_image1.jpg" alt=""
                     class="w-full h-full object-cover transform scale-107" />
             </div>
-            <div class="overflow-hidden h-60 md:h-auto md:order-4 xl:h-auto">
+            <div class="overflow-hidden h-60 md:order-4 xl:h-auto">
                 <img src="assets/images/community_image2.jpg" alt=""
                     class="w-full h-full object-cover transform scale-107" />
             </div>
-            <div class="overflow-hidden sm:h-[430px] md:h-auto md:order-3 xl:row-span-2 md:row-span-2 xl:order-none xl:h-auto">
+            <div
+                class="overflow-hidden sm:h-[430px] md:h-[500px] md:order-3 xl:row-span-2 md:row-span-2 xl:order-none xl:h-auto">
                 <img src="assets/images/community_image3.jpg" alt=""
                     class="w-full h-full object-cover transform scale-107" />
             </div>
@@ -642,30 +632,30 @@
     </div>
     <div class="bg-primary-color px-5 md:px-7 py-14 xl:px-24 flex flex-col xl:flex-row space-y-5 justify-between"
         id="counterSection">
-        <div class="bg-white font-nunito font-extrabold p-8 text-center">
-            <h1 class="counter text-primary-color text-4xl md:text-5xl md:leading-15" data-target="14">0+</h1>
-            <h3 class="text-lg md:text-2xl">
+        <div class="bg-white font-nunito font-extrabold p-8 md:p-10 text-center">
+            <h1 class="counter text-primary-color text-4xl md:text-5xl md:mb-4" data-target="14">0+</h1>
+            <h3 class="text-lg md:text-25 md:leading-6">
                 <span class="text-[#232A61]">Years Of </span>
                 <span class="text-primary-color">Experience</span>
             </h3>
         </div>
-        <div class="bg-white font-nunito font-extrabold p-8 text-center">
-            <h1 class="counter text-primary-color text-4xl md:text-5xl md:leading-15" data-target="1000">0+</h1>
-            <h3 class="text-lg md:text-2xl">
+        <div class="bg-white font-nunito font-extrabold p-8 md:p-10 text-center">
+            <h1 class="counter text-primary-color text-4xl md:text-5xl md:mb-4" data-target="1000">0+</h1>
+            <h3 class="text-lg md:text-25 md:leading-6">
                 <span class="text-[#232A61]">Happy </span>
                 <span class="text-primary-color">Clients</span>
             </h3>
         </div>
-        <div class="bg-white font-nunito font-extrabold p-8 text-center">
-            <h1 class="counter text-primary-color text-4xl md:text-5xl md:leading-15" data-target="51">0+</h1>
-            <h3 class="text-lg md:text-2xl">
+        <div class="bg-white font-nunito font-extrabold p-8 md:p-10 text-center">
+            <h1 class="counter text-primary-color text-4xl md:text-5xl md:mb-4" data-target="51">0+</h1>
+            <h3 class="text-lg md:text-25 md:leading-6">
                 <span class="text-[#232A61]">Brains To </span>
                 <span class="text-primary-color">Support</span>
             </h3>
         </div>
     </div>
     <div class="bg-gray-100 xl:px-24 px-5 md:px-7 py-10">
-        <h1 class="xl:text-40 text-2xl md:text-3xl mb-5 font-extrabold font-nunito">
+        <h1 class="xl:text-40 text-2xl md:text-28 mb-5 font-extrabold font-nunito">
             <span class="text-[#232A61]">Inside Bizcope </span>
             <span class="text-primary-color">Minds</span>
         </h1>
@@ -690,7 +680,7 @@
     <div
         class="bg-primary-color xl:px-24 px-5 md:px-7 py-14 flex xl:flex-row flex-col-reverse h-full xl:items-center justify-between">
         <div class="bg-white xl:w-1/2 rounded-sm">
-            <h1 class="text-2xl px-5 py-4 rounded-t font-nunito text-center text-white font-extrabold bg-[#232a61]">Get
+            <h1 class="text-2xl md:text-25 px-5 py-4 rounded-t font-nunito text-center text-white font-extrabold bg-[#232a61]">Get
                 A Free 30-Minute Strategy Session</h1>
             <form class="p-4 md:p-12 xl:p-12" action="" method="POST">
                 <div class="mb-1 md:flex md:space-x-2">
@@ -776,7 +766,7 @@
             </form>
         </div>
         <div class="xl:pl-20 xl:w-1/2 sm:mb-5">
-            <h1 class="xl:text-40 text-2xl capitalize xl:mb-8 mb-5 font-extrabold font-nunito text-white">Let us build
+            <h1 class="text-2xl md:text-28 xl:text-40 capitalize xl:mb-8 mb-5 font-extrabold font-nunito text-white">Let us build
                 your
                 brand</h1>
             <div class="pt-[4px] bg-white w-[20%] xl:mb-8 mb-6"></div>
@@ -797,10 +787,10 @@
                 <span class="text-[#232A61]">Get in </span>
                 <span class="text-primary-color">Touch</span>
             </h1>
-            <div class="pt-[5px] bg-primary-color w-[27%] mb-14"></div>
+            <div class="pt-[5px] bg-primary-color w-[27%] md:w-[9%] mb-14"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 md:mb-6 gap-7 md:gap-4">
                 <div class="shadow-xl xl:py-8 py-4 xl:px-6 px-4 border border-gray-200 animate-up">
-                    <h3 class="text-xl md:text-2xl xl:text-3xl font-extrabold font-nunito text-[#232a61] mb-3">Location
+                    <h3 class="text-xl md:text-28 xl:text-3xl font-extrabold font-nunito text-[#232a61] mb-3">Location
                     </h3>
                     <p class="text-lg leading-6 font-normal font-open mb-4">
                         Level 4 and 5 Nadian Tower 89/7 Gopibag, Dhaka 1203, Bangladesh
@@ -808,7 +798,7 @@
                 </div>
 
                 <div class="shadow-xl xl:py-8 py-4 xl:px-6 px-4 border border-gray-200 animate-up">
-                    <h3 class="text-xl md:text-2xl xl:text-3xl font-extrabold font-nunito text-[#232a61] mb-3">Contact
+                    <h3 class="text-xl md:text-28 xl:text-3xl font-extrabold font-nunito text-[#232a61] mb-3">Contact
                         us</h3>
                     <p class="text-lg leading-6 font-normal font-open mb-4">
                         <span>Phone: +8801324738600</span><br>
@@ -817,7 +807,7 @@
                 </div>
 
                 <div class="shadow-xl xl:py-8 py-4 xl:px-6 px-4 border border-gray-200 animate-up">
-                    <h3 class="text-xl md:text-2xl xl:text-3xl font-extrabold font-nunito text-[#232a61] mb-3">Our Hours
+                    <h3 class="text-xl md:text-28 xl:text-3xl font-extrabold font-nunito text-[#232a61] mb-3">Our Hours
                     </h3>
                     <p class="text-lg leading-6 font-normal font-open mb-4">
                         <span>We are open</span><br>
@@ -826,7 +816,7 @@
                     </p>
                 </div>
                 <div class="shadow-xl xl:py-8 py-4 xl:px-6 px-4 border border-gray-200 animate-up">
-                    <h3 class="text-xl md:text-2xl xl:text-3xl font-extrabold font-nunito text-[#232a61] mb-3">Social
+                    <h3 class="text-xl md:text-28 xl:text-3xl font-extrabold font-nunito text-[#232a61] mb-3">Social
                     </h3>
                     <div class="flex justify-start flex-wrap">
                         <a class="bg-primary-color h-9 w-9 flex justify-center items-center text-white mr-1" href="#"><i
@@ -955,7 +945,7 @@
             </div>
         </div>
         <div
-            class="grid grid-cols-1 md:grid-cols-[35%_65%] xl:flex xl:justify-between xl:items-center text-center gap-6 text-white mt-2 px-3 py-5 border-t border-gray-100">
+            class="grid grid-cols-1 md:grid-cols-[30%_70%] lg:grid-cols-[35%_65%] xl:flex xl:justify-between xl:items-center text-center gap-6 md:gap-x-6 md:gap-y-4 text-white mt-2 px-3 py-5 border-t border-gray-100">
             <div class="flex items-center md:flex-row xl:flex-row flex-col">
                 <a href="" class="bfg-[#232A61] mb-2 md:mb-0 md:mr-2"><i
                         class="p-3 w-10 h-10 flex justify-center items-center rounded-full text-xl font-bold bg-[#232A61] text-white fas fa-arrow-circle-down"></i></a>
@@ -964,12 +954,12 @@
                     <p class="text-xs">PDF, 2MB</p>
                 </div>
             </div>
-            <div class="font-bold sm:text-center md:w-4/5 mb-2 xl:w-auto">&copy; 2010-2025 Bizcope Digital Ltd. All
+            <div class="font-semibold font-15 sm:text-center md:w-4/5 mb-2 xl:w-auto">&copy; 2010-2025 Bizcope Digital Ltd. All
                 Rights
                 Reserved.
             </div>
             <div class="hidden md:block xl:hidden"></div>
-            <div class="sm:text-center md:w-4/5 xl:w-auto">
+            <div class="sm:text-center md:w-4/6 xl:w-auto">
                 <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center"
                     href=""><i class="fab fa-facebook-f"></i></a>
                 <a class="inline-flex bg-sky-200 rounded-lg text-black h-9 w-9 flex justify-center items-center"
